@@ -1,14 +1,18 @@
 import React, { useState } from "react";
 import axios from "axios";
+import WordDefinition from "./WordDefinition";
 
 export default function Dictionary() {
   const [defaultWord, setDefaultWord] = useState("");
+  let [ready, setReady] = useState(null);
+    useState("");
 
   function setDefaultValue(event) {
     setDefaultWord(event.target.value);
   }
 
   function setValuesFromApiResponse(response) {
+    setReady(response.data[0]);
     console.log(response.data[0]);
   }
 
@@ -26,22 +30,7 @@ export default function Dictionary() {
       <form onSubmit={searchForAWord}>
         <input type="search" onChange={setDefaultValue}></input>
       </form>
-      <div className="word-information">
-        <div className="word-header">Yoga: {defaultWord}</div>
-        <div className="word-syllable">yo•ga</div>
-        <div>noun</div>
-        <div className="word-pronunciation">/ˈyōɡə/</div>
-        <div className="word-meaning">
-          <p>
-            A Hindu spiritual and ascetic discipline, a part of which, including
-            breath control, simple meditation, and the adoption of specific
-            bodily postures, is widely practiced for health and relaxation.
-          </p>
-        </div>
-        <div>
-          <div>Collage</div>
-        </div>
-      </div>
+      <WordDefinition ready={ready} />
       <footer>
         This project was coded by Camila Avellaneda, is open-source on Github
         and hosted on Netlify
