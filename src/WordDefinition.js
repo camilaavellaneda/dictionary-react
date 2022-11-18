@@ -8,6 +8,8 @@ export default function WordDefinition(props) {
       <div className="word-information">
         <div className="word-header"> {props.ready.word}</div>
         <h2>{props.word}</h2>
+        <h3>{props.partofspeech}
+        </h3>
         {props.ready.phonetics.map(function (phonetic, index) {
           return (
             <div key={index}>
@@ -22,8 +24,6 @@ export default function WordDefinition(props) {
             </div>
           );
         })}
-
-        <div>Collage</div>
       </div>
     );
   } else {
