@@ -40,6 +40,7 @@ export default function Dictionary() {
   return (
     <div className="App-content">
       <section className="card">
+        <h1>Dictionary ✨</h1>
         <form onSubmit={searchForAWord}>
           <input type="search" onChange={setDefaultValue}></input>
         </form>

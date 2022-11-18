@@ -21,7 +21,9 @@ input {
   margin-left: 70px;
   margin-right: 70px;
 }
-
+h1 {
+  font-size: 36px;
+}
 h2 {
   font-size: 32px;
 }
