@@ -1,3 +1,70 @@
-.word-information {
-  text-align: center;
+body {
+  background-color: #fdeef4;
+}
+
+section {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 6px;
+  box-shadow: 0 10px 10px rgb(0 0 0 / 10%);
+  margin: 20px 0;
+}
+
+input {
+  width: 100%;
+  border-radius: 8px;
+  padding: 6px 4px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+.App {
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+.example {
+  color: #8c99ad;
+}
+
+.listen-button {
+  display: block;
+  padding: 10px 20px;
+  font-weight: 700;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  border-radius: 20px;
+  transition: all 150ms ease-in-out;
+  text-decoration: underline;
+  color: #0b58ca;
+  width:fit-content;
+}
+
+a {
+  color: #0b58ca;
+}
+a:hover {
+  color: #0b58ca;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+li {
+  padding: 5px
+}
+
+.phonetic-text {
+  margin-left: 28px;
+}
+
+.phonetic {
+  margin: 20px 0;
 }

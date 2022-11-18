@@ -39,11 +39,11 @@ export default function Dictionary() {
 
   return (
     <div className="App-content">
-      <h1 className="App-header">Dictionary</h1>
-      <h2>What word are you looking for?</h2>
-      <form onSubmit={searchForAWord}>
-        <input type="search" onChange={setDefaultValue}></input>
-      </form>
+      <section className="card">
+        <form onSubmit={searchForAWord}>
+          <input type="search" onChange={setDefaultValue}></input>
+        </form>
+      </section>
       <WordDefinition ready={ready} />
       <Photos photos={photos} />
       <footer>
