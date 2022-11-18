@@ -1,0 +1,17 @@
+.photos img {
+  border-radius: 4px;
+  max-width: 100%;
+}
+
+.photo-organization {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+}
+
+.individual-photo {
+  width: 30%;
+  margin-bottom: 5%;
+}

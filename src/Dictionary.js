@@ -31,7 +31,7 @@ export default function Dictionary() {
     let pexelsApiKey = `563492ad6f9170000100000101e9c4195d1341178e840d08b5a3981f`;
     let headers = { Authorization: `Bearer ${pexelsApiKey}` };
     axios
-      .get(`https://api.pexels.com/v1/search?query=${defaultWord}&per_page=1`, {
+      .get(`https://api.pexels.com/v1/search?query=${defaultWord}&per_page=6`, {
         headers: headers,
       })
       .then(handlePexelsResponse);
@@ -47,8 +47,14 @@ export default function Dictionary() {
       <WordDefinition ready={ready} />
       <Photos photos={photos} />
       <footer>
-        This project was coded by Camila Avellaneda, is open-source on Github
-        and hosted on Netlify.
+        This project was coded by Camila Avellaneda and is{" "}
+        <a
+          href="https://github.com/camilaavellaneda/dictionary-react"
+          target="_blank"
+          rel="noreferrer"
+        >
+          open-source on Github.
+        </a>
       </footer>
     </div>
   );
